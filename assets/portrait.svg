@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+<defs>
+ <radialGradient id="bg" cx="53%" cy="40%" r="75%"><stop stop-color="#26334b"/><stop offset=".54" stop-color="#151d2c"/><stop offset="1" stop-color="#0b1019"/></radialGradient>
+ <radialGradient id="head" cx="29%" cy="25%" r="90%"><stop stop-color="#d3ddef"/><stop offset=".18" stop-color="#a1b2d1"/><stop offset=".39" stop-color="#6f87af"/><stop offset=".62" stop-color="#334967"/><stop offset=".83" stop-color="#15243b"/><stop offset="1" stop-color="#677ea6"/></radialGradient>
+ <linearGradient id="neck" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#3e5577"/><stop offset=".2" stop-color="#94aacb"/><stop offset=".44" stop-color="#6982a4"/><stop offset=".75" stop-color="#1e304d"/><stop offset="1" stop-color="#7190bf"/></linearGradient>
+ <linearGradient id="body" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#7d94b5"/><stop offset=".16" stop-color="#2d4261"/><stop offset=".4" stop-color="#1c2c43"/><stop offset=".63" stop-color="#101d30"/><stop offset=".85" stop-color="#0a1423"/><stop offset="1" stop-color="#3d5b82"/></linearGradient>
+ <linearGradient id="lapel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91a6c4"/><stop offset=".24" stop-color="#3d5372"/><stop offset=".6" stop-color="#17263c"/><stop offset="1" stop-color="#101b2d"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9e7ff"/><stop offset=".45" stop-color="#89a9dc"/><stop offset="1" stop-color="#193553"/></linearGradient>
+ <linearGradient id="shade" x2="0" y2="1"><stop stop-color="#0b1019" stop-opacity="0"/><stop offset=".62" stop-color="#0b1019" stop-opacity="0"/><stop offset="1" stop-color="#0b1019"/></linearGradient>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="30"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feComponentTransfer><feFuncA type="table" tableValues="0 .035"/></feComponentTransfer></filter>
+</defs>
+<rect width="900" height="1100" fill="url(#bg)"/>
+<circle cx="450" cy="422" r="300" fill="none" stroke="#94acd3" opacity=".08"/>
+<ellipse cx="465" cy="962" rx="300" ry="50" fill="#000" opacity=".7" filter="url(#shadow)"/>
+<path d="M208 959C207 796 222 749 303 708L378 668L405 611H506L534 668L609 708C691 750 711 797 715 959Z" fill="url(#body)"/>
+<path d="M208 959C207 796 222 749 303 708L378 668" fill="none" stroke="url(#edge)" stroke-width="2" opacity=".7"/>
+<path d="M534 668L609 708C691 750 711 797 715 959" fill="none" stroke="#739bd6" stroke-width="2" opacity=".7"/>
+<path d="M395 498C404 555 403 589 385 637L377 670C403 702 435 720 459 722C490 720 519 703 537 672L523 637C505 595 502 554 511 498Z" fill="url(#neck)"/>
+<path d="M397 537C411 579 431 601 464 611C484 603 502 583 509 553L514 518Z" fill="#111f34" opacity=".47"/>
+<ellipse cx="322" cy="383" rx="22" ry="52" fill="#5f779c"/>
+<ellipse cx="588" cy="383" rx="21" ry="52" fill="#243853"/>
+<path d="M454 176C370 174 322 231 320 318L326 417C329 462 350 494 380 529C402 555 425 571 454 575C483 571 507 555 528 530C558 494 579 461 583 417L589 317C589 231 541 177 454 176Z" fill="url(#head)"/>
+<path d="M325 318C326 232 372 179 454 179" fill="none" stroke="#d8e4f7" stroke-width="2" opacity=".7"/>
+<path d="M584 317L578 416C575 460 553 493 525 528C508 548 488 564 467 569" fill="none" stroke="#84a9df" stroke-width="2" opacity=".78"/>
+<path d="M377 222C337 270 344 376 366 438C378 472 407 511 439 528C388 475 394 423 393 364C391 295 397 245 423 205Z" fill="#d7e3f7" opacity=".12" filter="url(#soft)"/>
+<path d="M512 230C549 302 541 369 521 425C508 462 499 508 477 548C529 508 551 464 561 419C575 351 570 277 533 236Z" fill="#14243b" opacity=".17" filter="url(#soft)"/>
+<path d="M377 663L330 704L386 790L412 760L459 879L431 727Z" fill="url(#lapel)"/>
+<path d="M537 666L579 706L524 788L497 759L459 879L485 727Z" fill="url(#lapel)"/>
+<path d="M377 663L431 727L459 879M537 666L485 727L459 879" fill="none" stroke="#a7bfdf" stroke-width="1.5" opacity=".37"/>
+<path d="M331 705L387 789M579 706L524 788" fill="none" stroke="#c0d0e7" stroke-width="1.5" opacity=".2"/>
+<path d="M277 787C268 840 267 904 272 955M640 787C649 840 652 904 647 955" fill="none" stroke="#617da3" stroke-width="1.4" opacity=".17"/>
+<path d="M459 880V974" stroke="#7490b6" opacity=".12"/>
+<rect width="900" height="1100" fill="url(#shade)"/>
+<g fill="#c4d2ee" font-family="Arial,sans-serif"><text x="62" y="83" font-size="16" letter-spacing="4">LRH / DESIGN</text><text x="838" y="83" font-size="12" letter-spacing="2" text-anchor="end">INDEPENDENT VISION</text><text x="62" y="999" font-size="13" letter-spacing="4">FORM. FEELING. FUTURE.</text><text x="62" y="1035" fill="#7486a8" font-size="12" letter-spacing="2">VISUAL / AI / BRAND</text></g>
+<rect width="900" height="1100" filter="url(#noise)"/>
+</svg>
